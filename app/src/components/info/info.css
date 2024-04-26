@@ -1,0 +1,64 @@
+.about,
+.payment,
+.delivery,
+.contact {
+    padding: 30px 10%;
+}
+
+.about>h1,
+.delivery>h1,
+.payment>h1,
+.contact>h1 {
+    margin-bottom: 1em;
+}
+
+.delivery>ol {
+    margin-bottom: 1.25em;
+}
+
+.about>h3,
+.contact>h3 {
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 1.25em;
+}
+
+.delivery>h3,
+.payment>h3 {
+    font-weight: 400;
+    margin-bottom: 1.25em;
+}
+
+.delivery>ol>li,
+.payment>ol>li {
+    font-weight: 400;
+    margin-left: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.delivery>p {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.about>p,
+.contact>p {
+    margin-bottom: 1.25em;
+}
+
+.about>ul {
+    margin-left: 2em;
+}
+
+.about>ul {
+    margin-left: 2em;
+}
+
+.about>ul>li {
+    margin-bottom: 0.5em;
+}
+
+.contact>ul>li {
+    margin-bottom: 0.5em;
+    list-style: none;
+}

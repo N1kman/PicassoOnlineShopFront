@@ -1,0 +1,14 @@
+.brand {
+    padding: 30px 10%;
+    padding-bottom: 50px;
+}
+
+.brand-title {
+    padding-bottom: 10px;
+}
+
+.brand-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2);
+}
