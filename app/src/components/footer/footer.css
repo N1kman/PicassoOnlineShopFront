@@ -1,12 +1,20 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
-.footer {
+.footer__container {
     display: flex;
-    flex-direction: column;
-    padding: 20px 10%;
+    justify-content: center;
     background-color: var(--color-black);
     box-shadow: 0 -2px 3px var(--color-shadow);
     padding-bottom: 75px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
 }
 
 .footer-top {
@@ -21,8 +29,6 @@
 }
 
 .footer-bottom {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
     padding-bottom: 25px;
     border-bottom: solid 2px;
     border-color: var(--color-white);
@@ -30,18 +36,9 @@
 
 .footer__area-menu {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     color: var(--color-white);
-    margin-right: 5em;
-}
-
-.menu-item {
-    margin-right: 1em;
-    width: 14em;
-}
-
-.mgr4 {
-    margin-right: 4em;
+    gap: 10px;
 }
 
 .menu-list {

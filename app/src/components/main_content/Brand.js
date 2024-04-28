@@ -13,23 +13,25 @@ import picture11 from "../../img/brand/brand_11.png"
 
 function Brand() {
     return (
-        <div className="brand">
-            <div className="brand-title">
-                <h2>Бренды в нашем магазине</h2>
-            </div>
-            <div className="brand-menu">
-                <img src={picture1} alt="picture1"></img>
-                <img src={picture2} alt="picture2"></img>
-                <img src={picture3} alt="picture3"></img>
-                <img src={picture4} alt="picture4"></img>
-                <img src={picture5} alt="picture5"></img>
-                <img src={picture6} alt="picture6"></img>
-                <img src={picture7} alt="picture7"></img>
-                <img src={picture8} alt="picture8"></img>
-                <img src={picture9} alt="picture9"></img>
-                <img src={picture10} alt="picture10"></img>
-                <img src={picture11} alt="picture11"></img>
-                <img src={picture1} alt="picture12"></img>
+        <div className="brand__container">
+            <div className="brand">
+                <div className="brand-title">
+                    <h2>Бренды в нашем магазине</h2>
+                </div>
+                <div className="brand-menu">
+                    <img className="picture" src={picture1} alt="picture1"></img>
+                    <img className="picture" src={picture2} alt="picture2"></img>
+                    <img className="picture" src={picture3} alt="picture3"></img>
+                    <img className="picture" src={picture4} alt="picture4"></img>
+                    <img className="picture" src={picture5} alt="picture5"></img>
+                    <img className="picture" src={picture6} alt="picture6"></img>
+                    <img className="picture" src={picture7} alt="picture7"></img>
+                    <img className="picture" src={picture8} alt="picture8"></img>
+                    <img className="picture" src={picture9} alt="picture9"></img>
+                    <img className="picture" src={picture10} alt="picture10"></img>
+                    <img className="picture" src={picture11} alt="picture11"></img>
+                    <img className="picture" src={picture1} alt="picture12"></img>
+                </div>
             </div>
         </div>
     );

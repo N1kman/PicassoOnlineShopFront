@@ -1,30 +1,40 @@
+.sales__container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
 .sales {
-    padding: 30px 10%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     grid-gap: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
 }
 
 .el {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .el-large {
     grid-area: 1 / 2 / 3 / 4;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .sales img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 25px;
     transition: all 0.3s ease;
 }
 
 .sales img:hover {
-    scale: 1.03;
+    scale: 1.05;
 }
