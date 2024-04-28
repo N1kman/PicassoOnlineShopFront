@@ -13,20 +13,16 @@ function Footer() {
                             <div className="menu-title">Компания</div>
                             <ul className="menu-list">
                                 <li className="menu-link"><a href="about">О нас</a></li>
-                                <li className="menu-link"><a href="/">Новости</a></li>
-                                <li className="menu-link"><a href="/">Реквизиты</a></li>
-                                <li className="menu-link"><a href="/">Вакансии</a></li>
+                                <li className="menu-link"><a href="requisites">Реквизиты</a></li>
                                 <li className="menu-link"><a href="contact">Контактная информация</a></li>
                             </ul>
                         </div>
                         <div className="menu-item">
                             <div className="menu-title">Сервис</div>
                             <ul className="menu-list">
-                                <li className="menu-link"><a href="/">Как заказать</a></li>
                                 <li className="menu-link"><a href="payment">Оплата</a></li>
                                 <li className="menu-link"><a href="delivery">Доставка</a></li>
-                                <li className="menu-link"><a href="/">Скидки и бонусы</a></li>
-                                <li className="menu-link"><a href="/">Возврат товаров</a></li>
+                                <li className="menu-link"><a href="purchase_returns">Возврат товаров</a></li>
                             </ul>
                         </div>
                         <div className="menu-item">

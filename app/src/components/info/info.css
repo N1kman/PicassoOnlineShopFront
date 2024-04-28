@@ -7,16 +7,15 @@
 .about,
 .payment,
 .delivery,
-.contact {
+.contact,
+.requisites,
+.purchaseReturns {
     width: 80%;
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.about>h1,
-.delivery>h1,
-.payment>h1,
-.contact>h1 {
+.info__container h1 {
     margin-bottom: 1em;
 }
 
@@ -25,10 +24,15 @@
 }
 
 .about>h3,
-.contact>h3 {
+.contact>h3,
+.purchaseReturns>h3 {
     font-size: 1em;
     font-style: italic;
     margin-bottom: 1.25em;
+}
+
+.purchaseReturns>h3 {
+    margin-top: 1.25em;
 }
 
 .delivery>h3,
@@ -54,19 +58,26 @@
     margin-bottom: 1.25em;
 }
 
-.about>ul {
+.about>ul,
+.purchaseReturns>ul {
     margin-left: 2em;
 }
 
-.about>ul {
-    margin-left: 2em;
-}
-
-.about>ul>li {
+.about>ul>li,
+.purchaseReturns>ul>li {
     margin-bottom: 0.5em;
 }
 
 .contact>ul>li {
     margin-bottom: 0.5em;
     list-style: none;
+}
+
+.requisites>p,
+.purchaseReturns>p {
+    margin-bottom: 0.5em;
+}
+
+.requisites>p>span {
+    opacity: 0.5;
 }

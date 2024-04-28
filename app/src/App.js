@@ -6,6 +6,8 @@ import About from "./components/info/About"
 import Payment from "./components/info/Payment"
 import Delivery from "./components/info/Delivery"
 import Contact from "./components/info/Contact"
+import Requisites from "./components/info/Requisites"
+import PurchaseReturns from "./components/info/PurchaseReturns"
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route path="payment" element={<Payment />} />
           <Route path="delivery" element={<Delivery />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="requisites" element={<Requisites />} />
+          <Route path="purchase_returns" element={<PurchaseReturns />} />
         </Routes>
         <Footer />
       </div>
