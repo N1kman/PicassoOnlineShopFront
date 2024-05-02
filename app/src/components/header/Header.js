@@ -43,7 +43,7 @@ const Header = () => {
                 {isOpen ? <i class="fa-solid fa-xmark icon-menu"></i> : <i className="fa-solid fa-bars icon-menu"></i>}
               </button>
               <a href="/" className="header__logo">PICASSO</a>
-              <a href="/" className="">
+              <a href="/" className="icon-basket">
                 <SlBasket className="header__cart-icon" />
               </a>
             </div>
