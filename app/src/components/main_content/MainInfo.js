@@ -16,16 +16,16 @@ function MainInfo() {
     return (
         <div className="content__container">
             <div className="layout__content">
-                <div className="list-content">
-                    <div className="collection-list">
-                        <CollectItem path="/" name="Обои" src={wallpaper} />
-                        <CollectItem path="/" name="Освещение" src={lighting} />
-                        <CollectItem path="/" name="Сантехника" src={plumbing} />
-                        <CollectItem path="/" name="Инструменты" src={tools} />
-                        <CollectItem path="/" name="Напольные покрытия" src={floorCoverings} />
-                        <CollectItem path="/" name="Строй материалы" src={buildingMaterials} />
-                        <CollectItem path="/" name="Краски" src={paints} />
-                        <CollectItem path="/" name="Окна и двери" src={windowsDoors} />
+                <div className="collection-list">
+                    <CollectItem path="/" name="Обои" src={wallpaper} />
+                    <CollectItem path="/" name="Освещение" src={lighting} />
+                    <CollectItem path="/" name="Сантехника" src={plumbing} />
+                    <CollectItem path="/" name="Инструменты" src={tools} />
+                    <CollectItem path="/" name="Напольные покрытия" src={floorCoverings} />
+                    <CollectItem path="/" name="Строй материалы" src={buildingMaterials} />
+                    <CollectItem path="/" name="Краски" src={paints} />
+                    <CollectItem path="/" name="Окна и двери" src={windowsDoors} />
+                    <div className="area-link">
                         <a href="/" className="link">
                             <div className="area-icon">
                                 <FaRegRectangleList className="link-icon" />

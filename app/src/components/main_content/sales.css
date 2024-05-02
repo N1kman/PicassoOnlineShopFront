@@ -9,7 +9,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: 1rem;
     margin: 0 auto;
     width: 80%;
     max-width: 1920px;
@@ -55,6 +55,16 @@
 @media (max-width: 920px) {
     .sales img {
         border-radius: 5px;
+    }
+
+    .sales {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .el-large {
+        grid-area: 2 / 1 / 4 / 3;
     }
 }
 

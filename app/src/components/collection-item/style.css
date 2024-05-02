@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.collection-link p {
+    display: block;
+}
+
 .collection-link>p {
     transition: all 0.3s ease;
 }
@@ -18,4 +22,22 @@
     width: 50px;
     height: 50px;
     margin-right: 1em;
+}
+
+@media (max-width: 768px) {
+    .collection-img {
+        display: none;
+    }
+
+    .collection-link {
+        display: inline-block;
+        height: auto;
+        width: auto;
+    }
+
+    .collection-link p {
+        background-color: var(--color-gray);
+        padding: 3px 6px;
+        border-radius: 10px;
+    }
 }

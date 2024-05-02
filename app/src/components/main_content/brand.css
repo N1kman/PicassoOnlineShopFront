@@ -23,6 +23,10 @@
     display: block;
 }
 
+.down-icon {
+    color: #ffffff;
+}
+
 @media (max-width: 1300px) {
     .brand-menu {
         grid-template-columns: repeat(4, 1fr);
@@ -44,5 +48,11 @@
 @media (max-width: 600px) {
     .brand-menu {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .brand-menu {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

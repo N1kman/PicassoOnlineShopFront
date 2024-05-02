@@ -17,12 +17,10 @@ const Header = () => {
               <a href="/" className="header__logo">PICASSO</a>
             </div>
 
-            {/* <div className="header__area-catalog"> */}
             <button type="button" className="header__catalog-btn btn">
               <FaAlignLeft className="header__catalog-icon" />
               <p className="header__catalog">Каталог</p>
             </button>
-            {/* </div> */}
 
             <div className="header__area-search">
               <form className="header__form-search">
@@ -44,12 +42,10 @@ const Header = () => {
               <TbHeartCheck className="header__favorites" />
             </a>
 
-
             <a href="/" className="header__control">
               <PiUserCircleGearThin className="header__profile-icon" />
               <p className="header__profile-text">Профиль</p>
             </a>
-
 
             <a href="/" className="header__control basket">
               <SlBasket className="header__cart-icon" />
