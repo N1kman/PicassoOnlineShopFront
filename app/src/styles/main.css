@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 :root {
     --color-yellow: #FEE151;
@@ -6,6 +7,10 @@
     --color-gray: #F5F9FA;
     --color-black: #272930;
     --color-shadow: #00000026;
+}
+
+html {
+    min-width: 320px;
 }
 
 * {

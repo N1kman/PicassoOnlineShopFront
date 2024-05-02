@@ -1,6 +1,5 @@
 import "./footer.css"
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Footer() {
     const [isOpenCompanyList, setOpenCompanyList] = useState(false);
@@ -48,8 +47,8 @@ function Footer() {
                                 <button className="open-button" onClick={() => setOpenCompanyList((prev) => !prev)}>
                                     {
                                         isOpenCompanyList ?
-                                            <i class="fa-solid fa-arrow-up-long arrow-icon"></i> :
-                                            <i class="fa-solid fa-arrow-down-long arrow-icon"></i>
+                                            <i className="fa-solid fa-arrow-up-long arrow-icon"></i> :
+                                            <i className="fa-solid fa-arrow-down-long arrow-icon"></i>
                                     }
                                 </button>
                             </div>
@@ -70,8 +69,8 @@ function Footer() {
                                 <button className="open-button" onClick={() => setOpenServiceList((prev) => !prev)}>
                                     {
                                         isOpenServiceList ?
-                                            <i class="fa-solid fa-arrow-up-long arrow-icon"></i> :
-                                            <i class="fa-solid fa-arrow-down-long arrow-icon"></i>
+                                            <i className="fa-solid fa-arrow-up-long arrow-icon"></i> :
+                                            <i className="fa-solid fa-arrow-down-long arrow-icon"></i>
                                     }
                                 </button>
                             </div>
@@ -92,8 +91,8 @@ function Footer() {
                                 <button className="open-button" onClick={() => setOpenСooperationList((prev) => !prev)}>
                                     {
                                         isOpenСooperationList ?
-                                            <i class="fa-solid fa-arrow-up-long arrow-icon"></i> :
-                                            <i class="fa-solid fa-arrow-down-long arrow-icon"></i>
+                                            <i className="fa-solid fa-arrow-up-long arrow-icon"></i> :
+                                            <i className="fa-solid fa-arrow-down-long arrow-icon"></i>
                                     }
                                 </button>
                             </div>
