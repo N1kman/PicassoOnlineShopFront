@@ -128,6 +128,9 @@
     align-items: center;
     height: 100%;
     background-color: var(--color-gray);
+    border: none;
+    padding-right: 5px;
+    cursor: pointer;
 }
 
 .header__profile-text,
@@ -194,7 +197,7 @@
 }
 
 .menu-btn,
-.header__cart-icon {
+.icon-hide {
     display: none;
 }
 

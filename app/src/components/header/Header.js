@@ -1,16 +1,23 @@
 import "./header.css"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { FaAlignLeft } from "react-icons/fa6";
 import { IoIosSearch } from "react-icons/io";
 import { FaChartGantt } from "react-icons/fa6";
 import { TbHeartCheck } from "react-icons/tb";
 import { PiUserCircleGearThin } from "react-icons/pi";
 import { SlBasket } from "react-icons/sl";
+import { useNavigate } from 'react-router-dom';
+import { AuthModalContext } from "../../context/authModalContext";
+import { checkAuth } from '../authModal/checkAuth';
 
 const Header = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { openAuthModal } = useContext(AuthModalContext)
+
+  const navigate = useNavigate();
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
@@ -32,6 +39,14 @@ const Header = () => {
     }
   }, [windowWidth]);
 
+  function handleAccountClick() {
+    if (checkAuth()) {
+      navigate('/account');
+    } else {
+      openAuthModal();
+    }
+  }
+
   return (
     <div className="header__container">
       <div className="header">
@@ -40,11 +55,11 @@ const Header = () => {
 
             <div className="header__area-logo">
               <button className="menu-btn" onClick={() => setOpen((prev) => !prev)}>
-                {isOpen ? <i class="fa-solid fa-xmark icon-menu"></i> : <i className="fa-solid fa-bars icon-menu"></i>}
+                {isOpen ? <i className="fa-solid fa-xmark icon-menu"></i> : <i className="fa-solid fa-bars icon-menu"></i>}
               </button>
               <a href="/" className="header__logo">PICASSO</a>
               <a href="/" className="icon-basket">
-                <SlBasket className="header__cart-icon" />
+                <SlBasket className="header__cart-icon icon-hide" />
               </a>
             </div>
 
@@ -77,10 +92,10 @@ const Header = () => {
                 <TbHeartCheck className="header__favorites" />
               </a>
 
-              <a href="/" className="header__control">
+              <button className="header__control" onClick={handleAccountClick}>
                 <PiUserCircleGearThin className="header__profile-icon" />
                 <p className="header__profile-text">Профиль</p>
-              </a>
+              </button>
 
               <a href="/" className="header__control basket">
                 <SlBasket className="header__cart-icon" />

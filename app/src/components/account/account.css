@@ -1,0 +1,21 @@
+.account__container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.account {
+    width: 80%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.account__p {
+    margin-bottom: 15px;
+}
+
+.account__btn {
+    background-color: var(--color-yellow);
+    width: 150px;
+    padding: 4px;
+}

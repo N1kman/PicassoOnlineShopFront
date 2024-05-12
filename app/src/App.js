@@ -9,22 +9,27 @@ import Contact from "./components/info/Contact"
 import Requisites from "./components/info/Requisites"
 import PurchaseReturns from "./components/info/PurchaseReturns"
 import { Routes, Route } from 'react-router-dom';
+import AuthModalLayout from "./context/authModalContext"
+import Account from "./components/account/Account"
 
 function App() {
   return (
     <div className="App">
       <div className="main-container">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="about" element={<About />} />
-          <Route path="payment" element={<Payment />} />
-          <Route path="delivery" element={<Delivery />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="requisites" element={<Requisites />} />
-          <Route path="purchase_returns" element={<PurchaseReturns />} />
-        </Routes>
-        <Footer />
+        <AuthModalLayout>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="about" element={<About />} />
+            <Route path="payment" element={<Payment />} />
+            <Route path="delivery" element={<Delivery />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="requisites" element={<Requisites />} />
+            <Route path="purchase_returns" element={<PurchaseReturns />} />
+            <Route path="account" element={<Account />} />
+          </Routes>
+          <Footer />
+        </AuthModalLayout>
       </div>
     </div>
   );
