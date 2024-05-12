@@ -27,7 +27,7 @@ function AuthModal() {
 
         try {
             if (!isLogin) {
-                await axios.post("http://localhost:8080/authentication/activation", {
+                axios.post("http://localhost:8080/authentication/activation", {
                     email: formData.get('email')
                 })
                 setCurrentForm('secondForm')
@@ -44,7 +44,6 @@ function AuthModal() {
             setErrorForm(false)
         } catch (error) {
             setErrorForm(true)
-            setCurrentForm('secondForm') //убрать
         }
     }
 

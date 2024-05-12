@@ -17,16 +17,16 @@ function MainInfo() {
         <div className="content__container">
             <div className="layout__content">
                 <div className="collection-list">
-                    <CollectItem path="/" name="Обои" src={wallpaper} />
-                    <CollectItem path="/" name="Освещение" src={lighting} />
-                    <CollectItem path="/" name="Сантехника" src={plumbing} />
-                    <CollectItem path="/" name="Инструменты" src={tools} />
-                    <CollectItem path="/" name="Напольные покрытия" src={floorCoverings} />
-                    <CollectItem path="/" name="Строй материалы" src={buildingMaterials} />
-                    <CollectItem path="/" name="Краски" src={paints} />
-                    <CollectItem path="/" name="Окна и двери" src={windowsDoors} />
+                    <CollectItem path="/products/Обои" name="Обои" src={wallpaper} />
+                    <CollectItem path="/products/Освещение" name="Освещение" src={lighting} />
+                    <CollectItem path="/products/Сантехника" name="Сантехника" src={plumbing} />
+                    <CollectItem path="/products/Инструменты" name="Инструменты" src={tools} />
+                    <CollectItem path="/products/Напольные_покрытия" name="Напольные покрытия" src={floorCoverings} />
+                    <CollectItem path="/products/Строй_материалы" name="Строй материалы" src={buildingMaterials} />
+                    <CollectItem path="/products/Краски" name="Краски" src={paints} />
+                    <CollectItem path="/products/Окна_и_двери" name="Окна и двери" src={windowsDoors} />
                     <div className="area-link">
-                        <a href="/" className="link">
+                        <a href="/products/Все" className="link">
                             <div className="area-icon">
                                 <FaRegRectangleList className="link-icon" />
                             </div>

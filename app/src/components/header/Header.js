@@ -47,6 +47,10 @@ const Header = () => {
     }
   }
 
+  function handleCatalogClick() {
+    navigate('/products');
+  }
+
   return (
     <div className="header__container">
       <div className="header">
@@ -64,7 +68,7 @@ const Header = () => {
             </div>
 
             {isOpen &&
-              <button type="button" className="header__catalog-btn btn">
+              <button onClick={() => handleCatalogClick()} type="button" className="header__catalog-btn btn">
                 <FaAlignLeft className="header__catalog-icon" />
                 <p className="header__catalog">Каталог</p>
               </button>

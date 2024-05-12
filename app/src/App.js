@@ -11,8 +11,10 @@ import PurchaseReturns from "./components/info/PurchaseReturns"
 import { Routes, Route } from 'react-router-dom';
 import AuthModalLayout from "./context/authModalContext"
 import Account from "./components/account/Account"
+import Products from "./components/products/Products"
 
 function App() {
+
   return (
     <div className="App">
       <div className="main-container">
@@ -27,6 +29,7 @@ function App() {
             <Route path="requisites" element={<Requisites />} />
             <Route path="purchase_returns" element={<PurchaseReturns />} />
             <Route path="account" element={<Account />} />
+            <Route path="products/:category" element={<Products />} />
           </Routes>
           <Footer />
         </AuthModalLayout>
