@@ -12,6 +12,7 @@ import { Routes, Route } from 'react-router-dom';
 import AuthModalLayout from "./context/authModalContext"
 import Account from "./components/account/Account"
 import Products from "./components/products/Products"
+import ProductPage from "./components/products/ProductPage"
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="purchase_returns" element={<PurchaseReturns />} />
             <Route path="account" element={<Account />} />
             <Route path="products/:category" element={<Products />} />
+            <Route path="product/:id" element={<ProductPage />} />
           </Routes>
           <Footer />
         </AuthModalLayout>

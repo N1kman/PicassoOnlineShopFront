@@ -10,6 +10,11 @@ import { useNavigate } from 'react-router-dom';
 import { AuthModalContext } from "../../context/authModalContext";
 import { checkAuth } from '../authModal/checkAuth';
 
+function getLength() {
+  const products = JSON.parse(localStorage.getItem('basket')) ?? []
+  return products.length
+}
+
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
 
@@ -25,7 +30,6 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -104,7 +108,7 @@ const Header = () => {
               <a href="/products/Корзина" className="header__control basket">
                 <SlBasket className="header__cart-icon" />
                 <span className="header__cart-text">Корзина</span>
-                <p className="header__cart-counter">0</p>
+                <p id="basket_count" className="header__cart-counter">{getLength()}</p>
               </a>
             </div>
           }

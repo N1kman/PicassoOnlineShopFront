@@ -6,7 +6,7 @@ import Product from "./Product";
 
 function Products() {
 
-    const [products, setProduts] = useState([])
+    const [products, setProducts] = useState([])
 
     const { category } = useParams()
 
@@ -15,7 +15,7 @@ function Products() {
     useEffect(() => {
         async function fetchProducts() {
             const data = await getProducts(category)
-            setProduts(data)
+            setProducts(data)
         }
         fetchProducts()
     }, [category, basketCount])

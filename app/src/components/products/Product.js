@@ -1,20 +1,7 @@
 import "./products.css"
 import { FaChartGantt } from "react-icons/fa6";
 import { TbHeartCheck } from "react-icons/tb";
-
-function saveToBasket(product) {
-    const products = JSON.parse(localStorage.getItem('basket')) ?? []
-    if (!products.find(elem => elem.id === product.id)) {
-        products.push(product)
-        localStorage.setItem('basket', JSON.stringify(products))
-    }
-}
-
-function removeFromBasket(product) {
-    let products = JSON.parse(localStorage.getItem('basket')) ?? []
-    products = products.filter(elem => elem.id !== product.id)
-    localStorage.setItem('basket', JSON.stringify(products))
-}
+import { saveToBasket, removeFromBasket } from "./productStorage"
 
 function Product({ elem, isBasket, setMinus }) {
 
@@ -29,12 +16,12 @@ function Product({ elem, isBasket, setMinus }) {
 
     return (
         <div className="product__element">
-            <a href="#">
+            <a href={"/product/" + elem.id}>
                 <img className="product__image" src={`http://localhost:8080/products/image/${elem.id}`} alt={elem.name}></img>
             </a>
 
             <div className="product__info">
-                <a href="#">
+                <a href={"/product/" + elem.id}>
                     <h3 className="product__name">{elem.name}</h3>
                 </a>
                 <span>{elem.price + " руб"}</span>
