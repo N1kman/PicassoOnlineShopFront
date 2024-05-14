@@ -10,25 +10,31 @@ function Products() {
 
     const { category } = useParams()
 
-    useEffect(() => {
+    const [basketCount, setBasketCount] = useState(JSON.parse(localStorage.getItem('basket')).length)
 
+    useEffect(() => {
         async function fetchProducts() {
             const data = await getProducts(category)
-
             setProduts(data)
         }
         fetchProducts()
-    }, [category])
+    }, [category, basketCount])
 
     return (
         <div className="containter__products">
-            <div className="products">
-                {
-                    products.map(elem => (
-                        <Product elem={elem} />
-                    ))
-                }
-            </div>
+            {
+                products.length !== 0 &&
+                <div className="products">
+                    {
+                        products.map(elem => (
+                            <Product key={elem.id} setMinus={() => setBasketCount(prev => prev - 1)} elem={elem} isBasket={category === "Корзина"} />
+                        ))
+                    }
+                </div>
+            }
+            {
+                products.length === 0 && <h3 className="products__not-find">Товаров в корзине не найдено!</h3>
+            }
         </div >
     );
 }

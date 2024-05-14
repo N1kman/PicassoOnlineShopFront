@@ -101,7 +101,7 @@ const Header = () => {
                 <p className="header__profile-text">Профиль</p>
               </button>
 
-              <a href="/" className="header__control basket">
+              <a href="/products/Корзина" className="header__control basket">
                 <SlBasket className="header__cart-icon" />
                 <span className="header__cart-text">Корзина</span>
                 <p className="header__cart-counter">0</p>
