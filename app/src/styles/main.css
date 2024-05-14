@@ -2,7 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 :root {
-    --color-yellow: #FEE151;
+    --color-yellow: rgb(254, 225, 81);
     --color-white: #FFFFF9;
     --color-gray: #F5F9FA;
     --color-black: #272930;

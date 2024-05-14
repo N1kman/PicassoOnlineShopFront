@@ -48,7 +48,7 @@ const Header = () => {
   }
 
   function handleCatalogClick() {
-    navigate('/products');
+    navigate('/products/Все');
   }
 
   return (

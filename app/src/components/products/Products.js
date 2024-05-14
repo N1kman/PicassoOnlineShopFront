@@ -2,6 +2,7 @@ import "./products.css"
 import getProducts from "./getProducts";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Product from "./Product";
 
 function Products() {
 
@@ -10,8 +11,10 @@ function Products() {
     const { category } = useParams()
 
     useEffect(() => {
+
         async function fetchProducts() {
             const data = await getProducts(category)
+
             setProduts(data)
         }
         fetchProducts()
@@ -22,7 +25,7 @@ function Products() {
             <div className="products">
                 {
                     products.map(elem => (
-                        <span>{elem.name}</span>
+                        <Product elem={elem} />
                     ))
                 }
             </div>
