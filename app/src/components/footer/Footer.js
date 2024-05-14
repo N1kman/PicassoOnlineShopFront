@@ -56,9 +56,9 @@ function Footer() {
                             {
                                 isOpenCompanyList &&
                                 (<ul className="menu-list">
-                                    <li className="menu-link"><a href="about">О нас</a></li>
-                                    <li className="menu-link"><a href="requisites">Реквизиты</a></li>
-                                    <li className="menu-link"><a href="contact">Контактная информация</a></li>
+                                    <li className="menu-link"><a href="/about">О нас</a></li>
+                                    <li className="menu-link"><a href="/requisites">Реквизиты</a></li>
+                                    <li className="menu-link"><a href="/contact">Контактная информация</a></li>
                                 </ul>)
                             }
                         </div>
@@ -78,9 +78,9 @@ function Footer() {
                             {
                                 isOpenServiceList &&
                                 (<ul className="menu-list">
-                                    <li className="menu-link"><a href="payment">Оплата</a></li>
-                                    <li className="menu-link"><a href="delivery">Доставка</a></li>
-                                    <li className="menu-link"><a href="purchase_returns">Возврат товаров</a></li>
+                                    <li className="menu-link"><a href="/payment">Оплата</a></li>
+                                    <li className="menu-link"><a href="/delivery">Доставка</a></li>
+                                    <li className="menu-link"><a href="/purchase_returns">Возврат товаров</a></li>
                                 </ul>)
                             }
                         </div>

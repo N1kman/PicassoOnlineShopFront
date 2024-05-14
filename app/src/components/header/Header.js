@@ -119,10 +119,10 @@ const Header = () => {
           <div className="header-bottom">
             <div className="header__area-menu">
               <ul className="header__menu">
-                <li className="header__manu-item"><a href="about">О нас</a></li>
-                <li className="header__manu-item"><a href="payment">Оплата</a></li>
-                <li className="header__manu-item"><a href="delivery">Доставка</a></li>
-                <li className="header__manu-item"><a href="contact">Контакты</a></li>
+                <li className="header__manu-item"><a href="/about">О нас</a></li>
+                <li className="header__manu-item"><a href="/payment">Оплата</a></li>
+                <li className="header__manu-item"><a href="/delivery">Доставка</a></li>
+                <li className="header__manu-item"><a href="/contact">Контакты</a></li>
               </ul>
             </div>
             <div className="header__area-contacts">

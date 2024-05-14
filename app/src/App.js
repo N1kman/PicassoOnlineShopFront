@@ -23,15 +23,15 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="about" element={<About />} />
-            <Route path="payment" element={<Payment />} />
-            <Route path="delivery" element={<Delivery />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="requisites" element={<Requisites />} />
-            <Route path="purchase_returns" element={<PurchaseReturns />} />
-            <Route path="account" element={<Account />} />
-            <Route path="products/:category" element={<Products />} />
-            <Route path="product/:id" element={<ProductPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/requisites" element={<Requisites />} />
+            <Route path="/purchase_returns" element={<PurchaseReturns />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/products/:category" element={<Products />} />
+            <Route path="/product/:id" element={<ProductPage />} />
           </Routes>
           <Footer />
         </AuthModalLayout>
